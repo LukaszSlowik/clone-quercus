@@ -39,7 +39,6 @@ const CareersForm = (props: Props) => {
       <MyPresentationPopup open={open} setOpen={setOpen} />
       <SectionWrapper>
         <form onSubmit={handleSubmit(onSubmit)} className="py-14">
-          {errors.phone?.message}
           <div className="grid grid-cols-1 gap-4  sm:grid-cols-2">
             <InputForm
               register={register}
