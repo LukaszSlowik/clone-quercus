@@ -12,7 +12,10 @@ const ValuesExamples = (props: Props) => {
       <SectionWrapper>
         <div>
           {valuesArray.map((item, index) => (
-            <div className="grid grid-cols-1  py-12 md:grid-cols-2">
+            <div
+              key={item.title}
+              className="grid grid-cols-1  py-12 md:grid-cols-2"
+            >
               <div
                 className={cn(
                   `text-left`,
