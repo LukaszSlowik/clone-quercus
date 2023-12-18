@@ -18,7 +18,7 @@ const FirstElementWrapper = (props: Props) => {
   return (
     <div className={cn(``, props.className)}>
       <SectionWrapper>
-        <div className="grid grid-cols-1  md:grid-cols-2">
+        <div className="grid grid-cols-1  py-8 md:grid-cols-2">
           <MotionImageWrapper
             xDirection={props.xDirection}
             yDirection={props.yDirection}
