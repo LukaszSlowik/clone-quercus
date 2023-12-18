@@ -111,7 +111,12 @@ const NavigationMobile = (props: Props) => {
                   <Link href="/careers">Careers</Link>
                 </li>
                 <li className=" hover:text-q-orange flex h-full cursor-pointer items-center justify-center uppercase">
-                  <button onClick={() => setShowPopup(true)}>Contact Us</button>
+                  <button
+                    className="uppercase"
+                    onClick={() => setShowPopup(true)}
+                  >
+                    Contact Us
+                  </button>
                 </li>
               </ul>
             </div>
