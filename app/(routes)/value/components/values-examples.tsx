@@ -27,7 +27,10 @@ const ValuesExamples = (props: Props) => {
                 </h2>
                 <div>
                   {item.descriptionParts.map((part) => (
-                    <p className="py-4  text-base text-[#46484b] opacity-70 lg:text-xl">
+                    <p
+                      key={part}
+                      className="py-4  text-base text-[#46484b] opacity-70 lg:text-xl"
+                    >
                       {part}
                     </p>
                   ))}
