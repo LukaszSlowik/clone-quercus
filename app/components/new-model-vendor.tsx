@@ -9,7 +9,7 @@ const NewModelVendor = (props: Props) => {
   return (
     <div>
       <SectionWrapper>
-        <div className="grid grid-cols-1  md:grid-cols-2">
+        <div className="grid grid-cols-1  py-12 md:grid-cols-2">
           <div className="my-auto  hidden sm:block">
             <Image
               src="/images/others/New-Model-Vendor-1.png"

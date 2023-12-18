@@ -7,7 +7,7 @@ type Props = {};
 const WillYouJoinUs = (props: Props) => {
   return (
     <FirstElementWrapper
-      imageSrc="/images/others/careers.png"
+      imageSrc="/images/others/Careers.png"
       imageAlt="careers"
       xDirection={100}
       yDirection={0}
