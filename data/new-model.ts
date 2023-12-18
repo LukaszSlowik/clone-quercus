@@ -1,0 +1,30 @@
+export type newModelType = {
+  title: string;
+  positive: boolean;
+  subtitles: string[];
+};
+
+export const newModelArray: newModelType[] = [
+  {
+    title:
+      "NEW MODEL VENDOR LETS YOU ENJOY THE BEST FEATURES OF DIGITAL DEVELOPMENT:",
+    positive: true,
+    subtitles: [
+      "AI-SUPPORTED DELIVERY INC. UNDERSTAFFING ALERTS",
+      "ON-LINE PROJECT TRACKING WITH MULTIPLE DATA CHECKPOINTS ",
+      "FLEXIBLE ALLOCATION OF TALENTS, MADE ACCOUNTABLE FOR WHAT THEY DELIVER",
+      "BLOCKS AND MODULES, EASY TO CUSTOMIZE AND HIGHLY EXCHANGEABLE",
+    ],
+  },
+  {
+    title:
+      "NEW MODEL VENDOR HELPS YOU AVOID THE NEGATIVE TRENDS OF TECH DELIVERY:",
+    positive: false,
+    subtitles: [
+      "LACK OF COMMITMENT IN CLIENT-VENDOR INTERACTION",
+      "SUPPLIER-IMPOSED TECHNOLOGY SOLUTIONS",
+      "CHALLENGING INTEGRATION AND COSTLY MAINTENANCE",
+      "EVER-PRESENT DELAY IN DELIVERY",
+    ],
+  },
+];

@@ -1,27 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --q-orange: #de722d;
+    --q-purple: #020c56;
+    --q-blue: #265b7e;
   }
 }
+.PhoneInput {
+  margin-bottom: 0.25rem;
+  display: block;
+  width: 100%;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-size: 0.875rem;
+}
+
+.PhoneInput:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #4d90fe;
+}
+.PhoneInput:invalid {
+  box-shadow: 0 0 0 2px #f56565;
 }
