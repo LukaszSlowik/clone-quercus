@@ -2,6 +2,7 @@ import React from "react";
 import * as Avatar from "@radix-ui/react-avatar";
 import Image from "next/image";
 import TypingMotion from "./typing-motion";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import { Open_Sans } from "next/font/google";
 type Props = {};
@@ -35,28 +36,18 @@ const AutoPresentation = (props: Props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/images/icon-soc-in.png"
-                alt="linkedin"
-                width={24}
-                height={24}
-              />
+              <FaLinkedin />
             </a>
           </div>
           <div className="flex  items-center gap-1">
             <p>Check my projects : </p>
             <a
-              href="https://www.linkedin.com/in/%C5%82ukasz-s%C5%82owik-05629b175/"
+              href="https://github.com/LukaszSlowik?tab=repositories"
               title="github"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src="/images/github.png"
-                alt="github"
-                width={40}
-                height={40}
-              />
+              <FaGithub />
             </a>
           </div>
           <div className="pt-4 text-sm">
